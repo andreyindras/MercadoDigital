@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../reset.css">
+</head>
+<body>
+    <div id="container">
+        <form id="entrar" onsubmit="event.preventDefault(); login()"> 
+            <h1>Login</h1>
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="nome-entrar"/>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha-entrar"/>
+
+            <input type="submit" value="Entrar"/>
+        </form>        
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

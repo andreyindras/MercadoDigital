@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="finalizar.css">
+    <link rel="stylesheet" href="../reset.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="finalizar-layout">
+            <div class="voltar-compra">
+                <a href="../catalogo/index.html">Voltar</a>
+                <h1>Seus Produtos</h1>
+                <div class="lista">
+                    <div class="item">
+                        <img src="../imagens/areia.jpg" alt="">
+                        <div class="info">
+                            <div class="nome">Areia</div>
+                            <div class="preco">R$60.00</div>
+                        </div>
+                        <div class="quantidade">1</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="confirmacao-envio">
+                <div class="direita">
+                    <h1>Confirmação de Envio</h1>
+                    <form action="">
+                        <div class="grupo">
+                            <label for="">Nome Completo:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="grupo">
+                            <label for="">Telefone:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="grupo">
+                            <label for="">Endereço:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="grupo">
+                            <label for="">Cidade:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="grupo">
+                            <label for="">Método de Pagamento:</label>
+                            <select>
+                                <option value="cartao">Cartão de Crédito</option>
+                                <option value="boleto">Boleto</option>
+                                <option value="transferencia">Transferência</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <div class="retorno-compra">
+                        <div class="linha">
+                            <div>Quantidade Total:</div>
+                            <div class="quantidade-total"></div>
+                        </div>
+                        <div class="linha">
+                            <div>Preço Total:</div>
+                            <div class="preco-total"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="enviar-pedido">Enviar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="conteudo-popup">
+          <h2>Pedido enviado com sucesso!</h2>
+          <p>Obrigado por fazer sua compra conosco.</p>
+          <button class="fechar-popup">Fechar</button>
+        </div>
+      </div>
+
+    <script src="finalizar.js"></script>
+</body>
+
+</html>
